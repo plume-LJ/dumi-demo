@@ -1,0 +1,34 @@
+// src/Button/styles/index.less
+@import '../../variables.less';
+
+.dumi-btn {
+  font-size: 14px;
+  height: 32px;
+  padding: 4px 15px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dumi-btn-default {
+  color: #333;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+
+  &:hover {
+    border-color: @dumi-primary;
+    color: @dumi-primary;
+  }
+}
+
+.dumi-btn-primary {
+  color: #fff;
+  background: @dumi-primary;
+  border: 1px solid @dumi-primary;
+}
+
+.dumi-btn-dashed {
+  color: @dumi-primary;
+  background: #fff;
+  border: 1px dashed @dumi-primary;
+}
